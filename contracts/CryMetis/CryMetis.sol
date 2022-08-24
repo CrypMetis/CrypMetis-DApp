@@ -19,6 +19,7 @@ contract CryMetis{
         address owner;
         address lender;
     }
+    
     Recording[] public list;
     function init(address _cry) public {
         cry=_cry;
