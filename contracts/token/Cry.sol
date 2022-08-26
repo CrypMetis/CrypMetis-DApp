@@ -15,6 +15,7 @@ contract Cry is ERC20{
     }
     
     function changeOwner(address manager) external _isOwner {
+    
         admin = manager;
         emit AdminChange(msg.sender,manager);
     }
