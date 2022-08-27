@@ -3,6 +3,7 @@ import '../lib/TransferHelper.sol';
 import '../token/Cry.sol';
 
 contract CryMetis{
+
     address cry;
     Cry crys;
     uint private reserve;
