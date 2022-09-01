@@ -55,4 +55,10 @@ contract CryMetis{
          list.push(record);
     }
     
+      function approve(address _to, uint256 _tokenId)public  {
+        require(msg.sender == list[_tokenId].owner);
+        require(msg.sender != _to);
+        _tokenApprovals[_tokenId] = _to;
+    }
+    
 
